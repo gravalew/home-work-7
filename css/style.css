@@ -1,0 +1,663 @@
+/* FONTS start */
+@import url('https://fonts.googleapis.com/css?family=Asap:regular,italic,500,500italic,600,600italic,700,700italic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rozha+One:regular&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora:regular,500,600,700,italic,500italic,600italic,700italic&display=swap');
+@font-face {
+  font-family: 'Kobzar KS';
+  src: url('../fonts/KobzarKS.woff2') format('woff2'),
+    url('../fonts/KobzarKS.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* FONTS end */
+/* Стили обнуления */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  vertical-align: top;
+}
+body {
+  font-family: Asap;
+  font-size: 20px;
+}
+/* ------------------ */
+/* Header start */
+.header {
+  background: #ff7140
+    url('http://placehold.it/100x80.jpg/FF7140/ffffff&text=header') space;
+  padding: 50px;
+  margin-bottom: 20px;
+}
+.header__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+  background: #a62a00
+    url('http://placehold.it/180x40.jpg/A62A00/ffffff&text=.header__title')
+    no-repeat;
+}
+.menu__body {
+  background: #a62a00
+    url('http://placehold.it/180x40.jpg/A62A00/ffffff&text=(nav).menu__body') 0
+    50px repeat-x;
+  padding: 20px;
+  text-align: center;
+}
+.menu__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 35px;
+  margin-bottom: 25px;
+  background: #bf5430
+    url('http://placehold.it/300x40.jpg/BF5430/ffffff&text=(h3).menu__title')
+    100% 0 no-repeat;
+}
+.menu__list {
+  background: url('http://placehold.it/200x40.jpg/aa4100/ffffff&text=(ul).menu__list')
+      top left repeat-x,
+    url('http://placehold.it/200x40.jpg/aa4100/ffffff&text=(ul).menu__list')
+      100% 100% repeat-x;
+}
+.menu__list li {
+  display: inline-block;
+}
+ul.menu__list li {
+  margin: 10px 0px 10px 25px;
+}
+.menu__link {
+  display: inline-block;
+  padding: 0px 0px 0px 10px;
+  box-shadow: 1px 2px 2px 2px #fb955e93;
+  font-weight: 700;
+  max-width: 350px;
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 25px;
+  letter-spacing: 2px;
+  line-height: 120%;
+  text-align: center;
+  color: #ff4100;
+  background: #ff9773;
+}
+.menu__link span {
+  display: block;
+  padding: 15px 20px 15px 45px;
+  background: url('../img/icons/white-arrow.png') 0px 0 / auto 100% no-repeat;
+}
+.menu__link:hover {
+  background: #ff4100;
+  color: #ff9773;
+  transition: all 0.3s ease 0s;
+}
+.menu__link:hover span {
+  background: url('../img/icons/darkred-arrow.png') 0px 0 / auto 100% no-repeat;
+  transition: all 0.5s ease 0s;
+}
+.menu__link:active {
+  box-shadow: none;
+  transition: all 0.3s ease 0s;
+}
+/* Header end */
+/* Main start */
+.main {
+  background: url('../img/icons/pattern-with-watercolor-cherry-endless.jpg')
+    fixed;
+  font-family: 'Rozha One';
+}
+.pat-block {
+  margin-bottom: 25px;
+  border-radius: 25px;
+}
+.title {
+  margin-bottom: 35px;
+  font-weight: 700;
+}
+.text {
+  text-align: justify;
+  text-indent: 20px;
+}
+.example {
+  height: 500px;
+  border: 10px solid red;
+  padding: 25px 35px;
+  background: url('../img/icons/example.png') 50% / auto 100% no-repeat;
+}
+.example__title {
+  text-align: center;
+}
+.example__text {
+  margin-bottom: 15px;
+  text-shadow: 1px 2px 1px yellow;
+}
+.example2 {
+  border: 10px solid rgb(179, 31, 31);
+  padding: 25px 35px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feccb1+0,f17432+50,ea5507+51,fb955e+100;Red+Gloss+%232 */
+  background: #feccb1; /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    #feccb1 0%,
+    #f17432 50%,
+    #ea5507 51%,
+    #fb955e 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    #feccb1 0%,
+    #f17432 50%,
+    #ea5507 51%,
+    #fb955e 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    #feccb1 0%,
+    #f17432 50%,
+    #ea5507 51%,
+    #fb955e 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=1 ); /* IE6-9 */
+}
+
+.example2__title {
+  word-spacing: 10px;
+}
+
+.example2__text {
+  letter-spacing: 15px;
+}
+.example3 {
+  border: 5px dotted orangered;
+  background: url('../img/gipnoz.jpg') 0 0 / auto 100% round local;
+  overflow: auto;
+  color: #fff;
+  max-height: 400px;
+}
+
+.example3__title {
+  opacity: 0.1;
+}
+
+.example3__text {
+  opacity: 0.1;
+  font-size: 25px;
+  word-spacing: 4px;
+}
+.example4 {
+  border: 4px dashed rgb(224, 97, 37);
+  padding: 30px;
+  background: rgb(172, 160, 160);
+}
+.example4__title {
+  font-weight: 700;
+}
+.example4__list {
+  color: #d5d5ff;
+}
+.example4__list li {
+  line-height: 120%;
+}
+.example4__list li span {
+  background: url('../img/arraw.png') 0 5px / 23px auto no-repeat;
+  padding: 0px 0px 0px 29px;
+}
+.example5 {
+  padding: 30px;
+  background: #ea5507;
+  text-align: center;
+}
+.example5 div {
+  display: inline-block;
+}
+.example5__title {
+  color: #fff;
+  letter-spacing: 5px;
+}
+div.example5__block1 {
+  width: 300px;
+  height: 300px;
+  border: 4px double red;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#959595+0,0d0d0d+46,010101+50,0a0a0a+53,4e4e4e+76,383838+87,1b1b1b+100;Black+Gloss+Pipe */
+  background: #959595; /* Old browsers */
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    #959595 0%,
+    #0d0d0d 46%,
+    #010101 50%,
+    #0a0a0a 53%,
+    #4e4e4e 76%,
+    #383838 87%,
+    #1b1b1b 100%
+  ); /* FF3.6-15 */
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    #959595 0%,
+    #0d0d0d 46%,
+    #010101 50%,
+    #0a0a0a 53%,
+    #4e4e4e 76%,
+    #383838 87%,
+    #1b1b1b 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(
+    ellipse at center,
+    #959595 0%,
+    #0d0d0d 46%,
+    #010101 50%,
+    #0a0a0a 53%,
+    #4e4e4e 76%,
+    #383838 87%,
+    #1b1b1b 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.example5__block2 {
+  width: 300px;
+  height: 300px;
+  margin-left: 45px;
+  border: 4px double red;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#959595+0,0d0d0d+46,010101+50,0a0a0a+53,4e4e4e+76,383838+87,1b1b1b+100;Black+Gloss+Pipe */
+  background: #959595; /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    #959595 0%,
+    #0d0d0d 46%,
+    #010101 50%,
+    #0a0a0a 53%,
+    #4e4e4e 76%,
+    #383838 87%,
+    #1b1b1b 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    #959595 0%,
+    #0d0d0d 46%,
+    #010101 50%,
+    #0a0a0a 53%,
+    #4e4e4e 76%,
+    #383838 87%,
+    #1b1b1b 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    #959595 0%,
+    #0d0d0d 46%,
+    #010101 50%,
+    #0a0a0a 53%,
+    #4e4e4e 76%,
+    #383838 87%,
+    #1b1b1b 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=1 ); /* IE6-9 */
+}
+
+.example5__block3 {
+  width: 300px;
+  height: 300px;
+  margin-left: 45px;
+  border: 4px double red;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#959595+0,0d0d0d+46,010101+50,0a0a0a+53,4e4e4e+76,383838+87,1b1b1b+100;Black+Gloss+Pipe */
+  background: #959595; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #959595 0%,
+    #0d0d0d 46%,
+    #010101 50%,
+    #0a0a0a 53%,
+    #4e4e4e 76%,
+    #383838 87%,
+    #1b1b1b 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #959595 0%,
+    #0d0d0d 46%,
+    #010101 50%,
+    #0a0a0a 53%,
+    #4e4e4e 76%,
+    #383838 87%,
+    #1b1b1b 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #959595 0%,
+    #0d0d0d 46%,
+    #010101 50%,
+    #0a0a0a 53%,
+    #4e4e4e 76%,
+    #383838 87%,
+    #1b1b1b 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=0 ); /* IE6-9 */
+}
+.example5__block4 {
+  width: 300px;
+  height: 300px;
+  margin-left: 45px;
+  border: 4px double red;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#959595+0,0d0d0d+46,010101+50,0a0a0a+53,4e4e4e+76,383838+87,1b1b1b+100;Black+Gloss+Pipe */
+  background: #959595; /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    #959595 0%,
+    #0d0d0d 46%,
+    #010101 50%,
+    #0a0a0a 53%,
+    #4e4e4e 76%,
+    #383838 87%,
+    #1b1b1b 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    #959595 0%,
+    #0d0d0d 46%,
+    #010101 50%,
+    #0a0a0a 53%,
+    #4e4e4e 76%,
+    #383838 87%,
+    #1b1b1b 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    #959595 0%,
+    #0d0d0d 46%,
+    #010101 50%,
+    #0a0a0a 53%,
+    #4e4e4e 76%,
+    #383838 87%,
+    #1b1b1b 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.example6 {
+  border: 5px solid #ff4100;
+  padding: 25px;
+  text-align: center;
+}
+.example6 div {
+  display: inline-block;
+  max-width: 20%;
+  margin-left: 1.5%;
+  height: 240px;
+  width: 240px;
+  box-shadow: 2px -5px 3px 4px #0d220d;
+}
+.example6__title {
+  text-transform: uppercase;
+}
+
+.example6__block1 {
+  border: 6px double #2c1620;
+  background: url('http://placehold.it/80x80.jpg/ec7608fd/ffffff&text=no-repeat')
+    no-repeat #dfdfdffd;
+  margin-left: 0;
+}
+
+.example6__block2 {
+  border: 6px dotted #2c1620;
+  background: url('http://placehold.it/80x80.jpg/ec7608fd/ffffff&text=repeat-x')
+    repeat-x #dfdfdffd;
+}
+
+.example6__block3 {
+  border: 6px dashed #2c1620;
+  background: url('http://placehold.it/80x80.jpg/ec7608fd/ffffff&text=repeat-y')
+    repeat-y #dfdfdffd;
+}
+
+.example6__block4 {
+  border: 6px solid #2c1620;
+  background: url('http://placehold.it/80x80.jpg/ec7608fd/ffffff&text=space')
+    space #dfdfdffd;
+}
+.example6__block5 {
+  border: 6px solid #2c1620;
+  background: url('http://placehold.it/80x80.jpg/ec7608fd/ffffff&text=round')
+    round #dfdfdffd;
+}
+.example7 {
+  border: 5px solid #8a3011;
+  padding: 25px;
+  text-align: center;
+}
+.example7 div {
+  display: inline-block;
+  margin-left: 1.5%;
+  height: 240px;
+  width: 300px;
+  box-shadow: 5px 2px 2px 3px #555555;
+}
+.example7__title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.example7__block1 {
+  border: 6px solid #2c1620;
+  background: url('http://placehold.it/80x80.jpg/ec7608fd/ffffff&text=default')
+    0 0 no-repeat #dfdfdffd;
+  margin-left: 0;
+}
+
+.example7__block2 {
+  border: 6px solid #2c1620;
+  background: url('http://placehold.it/80x80.jpg/ec7608fd/ffffff&text=center')
+    50% no-repeat #dfdfdffd;
+}
+
+.example7__block3 {
+  border: 6px solid #2c1620;
+  background: url('http://placehold.it/80x80.jpg/ec7608fd/ffffff&text=left') 0
+    50% no-repeat #dfdfdffd;
+}
+
+.example7__block4 {
+  border: 6px solid #2c1620;
+  background: url('http://placehold.it/80x80.jpg/ec7608fd/ffffff&text=bottom right')
+    100% 100% no-repeat #dfdfdffd;
+}
+
+.example7__block5 {
+  border: 6px solid #2c1620;
+  background: url('http://placehold.it/80x80.jpg/ec7608fd/ffffff&text=45px 30px')
+    45px 30px no-repeat #dfdfdffd;
+}
+.example8 {
+  text-align: center;
+  border: 6px solid #ee4499;
+  padding: 30px;
+}
+.example8__title {
+  letter-spacing: 8px;
+}
+.example8 div {
+  display: inline-block;
+  max-width: 30%;
+  margin-left: 1.5%;
+  height: 300px;
+  width: 500px;
+  box-shadow: 2px 2px 1px 1px #d5d55d;
+}
+.example8__block1 {
+  border: 6px solid #2c1620;
+  background: url('http://placehold.it/200x200.jpg/ec7608fd/ffffff&text=по ширине')
+    0 0/100% auto no-repeat;
+  margin-bottom: 15px;
+}
+
+.example8__block2 {
+  border: 6px solid #2c1620;
+  background: url('http://placehold.it/200x200.jpg/ec7608fd/ffffff&text=по высоте')
+    0 0 / auto 100% no-repeat;
+  margin-bottom: 15px;
+}
+
+.example8__block3 {
+  border: 6px solid #2c1620;
+  background: url('http://placehold.it/200x200.jpg/ec7608fd/ffffff&text=растянуть')
+    0 0/100% 100% no-repeat;
+  margin-bottom: 15px;
+}
+
+.example8__block4 {
+  border: 6px solid #2c1620;
+  background: url('http://placehold.it/200x200.jpg/ec7608fd/ffffff&text=contain')
+    0 0 / contain no-repeat;
+}
+
+.example8__block5 {
+  border: 6px solid #2c1620;
+  background: url('http://placehold.it/200x200.jpg/ec7608fd/ffffff&text=cover')
+    0 0 / cover no-repeat;
+}
+
+.example8__block6 {
+  border: 6px solid #2c1620;
+  background: url('http://placehold.it/200x200.jpg/ec7608fd/ffffff&text=300px 200px')
+    0 0/300px 200px no-repeat;
+}
+.example9 {
+  text-align: center;
+  padding: 50px;
+  border: 10px dashed #556622;
+}
+.example9 div {
+  display: inline-block;
+  max-width: 30%;
+  margin-left: 65px;
+  height: 300px;
+  width: 350px;
+  box-shadow: -2px -2px 1px 2px rgba(107, 106, 106, 0.5);
+}
+.example9__title {
+  text-transform: uppercase;
+}
+
+.example9__block1 {
+  border: 6px solid #2c1620;
+  background: url('../img/light_man_copy_26.jpg') 0 0 / 40% auto no-repeat,
+    #feccb1;
+  margin-left: 0;
+}
+
+.example9__block2 {
+  border: 6px solid #2c1620;
+  background: url('../img/light_man_copy_26.jpg') 0 0 / 40% auto no-repeat,
+    url('../img/icons/example.png') bottom right/ 20% auto no-repeat, #feccb1;
+}
+
+.example9__block3 {
+  border: 6px solid #2c1620;
+  background: url('../img/light_man_copy_26.jpg') 0 0 / 40% auto no-repeat,
+    url('../img/icons/example.png') bottom right/ 20% auto no-repeat,
+    url('../img/ellipse.png') center/ auto 350px no-repeat, #feccb1;
+}
+
+.example9__block4 {
+  border: 6px solid #2c1620;
+  background: url('../img/light_man_copy_26.jpg') 0 0 / 40% auto no-repeat,
+    url('../img/icons/example.png') bottom right/ 20% auto no-repeat,
+    url('../img/ellipse.png') center/ auto 350px no-repeat,
+    url('../img/icons/white-arrow.png') space, #feccb1;
+}
+/* FOOTER START */
+
+.footer {
+  background-color: #0d2c4a;
+  font-family: 'Kobzar KS';
+}
+.footer h6 {
+  font-size: 20px;
+  line-height: 150%;
+  opacity: 0.5;
+  margin: 0px 0px 24px 0px;
+}
+.footer__inner {
+  color: #ffffff;
+}
+
+.footer__inner > div {
+  display: inline-block;
+  vertical-align: top;
+  margin: 86px 0px 0px 68px;
+}
+.footer__inner > div > ul > li {
+  line-height: 162%;
+  margin-bottom: 9px;
+}
+.footer__inner > div > ul > li > a {
+  color: #fff;
+}
+div.footer__contacts {
+  margin: 56px 125px 117px 0px;
+}
+
+.footer__contacts-title {
+  font-family: Lora;
+  font-size: 52px;
+  font-weight: 700;
+  margin: 0px 0px 16px 0px;
+  line-height: 128%;
+}
+
+.footer__contacts-text {
+  max-width: 255px;
+  color: #f8f8f8;
+  opacity: 0.85;
+  line-height: 162%;
+  margin: 0px 0px 24px 0px;
+}
+
+.footer__contacts-icons img {
+  margin: 0px 0px 0px 16px;
+}
+
+.footer__spaces {
+  margin: 0px 0px 0px 0px;
+}
+
+.footer__company {
+  margin: 0px 0px 0px 68px;
+}
+
+.footer__support {
+  margin: 0px 0px 0px 68px;
+}
+
+.footer__contacts-us {
+  margin: 0px 0px 0px 68px;
+  max-width: 212px;
+}
+
+/* FOOTER END */
+/* Main end */
